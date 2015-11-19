@@ -9,6 +9,6 @@ let artistSchema = new mongoose.Schema ({
   description: String
 });
 
-var Artist = mongoose.model('Artist', artistSchema)
+let Artist = mongoose.model('Artist', artistSchema)
 
 module.exports = Artist
