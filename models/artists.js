@@ -7,6 +7,6 @@ let artistSchema = new mongoose.Schema ({
   description: string
 })
 
-var artist= mongoose.model('vampire', artistSchema)
+var artist= mongoose.model('Artist', artistSchema)
 
 module.exports = artist
