@@ -6,7 +6,8 @@ let artistSchema = new mongoose.Schema ({
   img_url: String,
   nationality: String,
   birthYear: Number,
-  description: String
+  description: String,
+  paintings: Array
 });
 
 let Artist = mongoose.model('Artist', artistSchema);
