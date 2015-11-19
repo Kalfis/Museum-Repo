@@ -13,7 +13,10 @@ mongoose.connect('mongodb://localhost/museumrApp');
 
 app.get('/artists', (req, res) => {
   console.log('hit /artists');
-  res.send(Artist.Artist)
+  Artist.find({}, function(err, result) {
+    console.log(result)
+    res.send(result);
+  });
 });
 
 app.post('/create-artist', (req, res, next) => {
