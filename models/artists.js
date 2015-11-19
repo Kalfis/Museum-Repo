@@ -1,3 +1,4 @@
+'use strict';
 let mongoose = require('mongoose')
 
 let artistSchema = new mongoose.Schema ({
@@ -5,9 +6,10 @@ let artistSchema = new mongoose.Schema ({
   img_url: String,
   nationality: String,
   birthYear: Number,
-  description: String
+  description: String,
+  paintings: Array
 });
 
 var Artist = mongoose.model('Artist', artistSchema)
 
-module.exports = artist
+module.exports = Artist;
