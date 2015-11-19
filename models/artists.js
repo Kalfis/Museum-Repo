@@ -10,6 +10,6 @@ let artistSchema = new mongoose.Schema ({
   paintings: Array
 });
 
-var Artist = mongoose.model('Artist', artistSchema)
+let Artist = mongoose.model('Artist', artistSchema);
 
 module.exports = Artist;
