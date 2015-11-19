@@ -1,3 +1,4 @@
+'use strict';
 let mongoose = require('mongoose');
 
 let paintingSchema = new mongoose.Schema({
