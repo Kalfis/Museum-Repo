@@ -1,12 +1,13 @@
 let mongoose = require('mongoose')
-let artistSchema = new mongoose.Schema ({
-  name: string,
-  img_url: string,
-  nationality: string,
-  birthYear: number,
-  description: string
-})
 
-var artist= mongoose.model('vampire', artistSchema)
+let artistSchema = new mongoose.Schema ({
+  name: String,
+  img_url: String,
+  nationality: String,
+  birthYear: Number,
+  description: String
+});
+
+var Artist = mongoose.model('Artist', artistSchema)
 
 module.exports = artist
